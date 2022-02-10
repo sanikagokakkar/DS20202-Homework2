@@ -1,0 +1,59 @@
+---
+title: 'Homework 2'
+author: "Sanika Gokakkar"
+date: "2/9/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Due: 2/9/2022 before 11:59pm. Submit in Canvas (file upload).
+1b. Team Members:
+  Total # of pull requests made: 1
+    1 pull request made to: https://github.com/Trae2021/practice1-trae-anderson
+  Total # of pull requests accepted: 1
+    1 pull request accepted from: https://github.com/dlkeith-isu/DS-202-Homework-2
+1c. Working with Github can be made easier by getting access to the cheat sheets. One good way is by practicing and making errors.Taking help from a groupmate or teammate is another way to learn. Google and Youtube have a bunch of videos that explain ways to use Github in an efficient and easy way.
+
+
+# question 2)
+life5060 <- read.csv("https://raw.githubusercontent.com/ds202-at-isu/materials/master/01_collaborative-environment/data/gapminder-5060.csv")
+
+US1 <- life5060[life5060$country == "United States", ]
+library(magrittr)
+library(tidyverse)
+US1 %>% 
+  ggplot(aes(x = year, y = lifeExp)) +
+  geom_line() +
+  ggtitle("US Expectancy of Minneapolis") +
+  xlab("Year") +
+  ylab("Average Expectancy of Life")
+  
+Australia1 <- life5060[life5060$country == "Australia", ] 
+Australia1 %>% 
+  ggplot(aes(x = year, y = lifeExp)) +
+  geom_line() +
+  ggtitle("Australia Expectancy of Life") +
+  xlab("Year") +
+  ylab("Average Expectancy of Life")
+  
+Canada1 <- life5060[life5060$country == "Canada", ] 
+Canada2 <- Canada1 %>% mutate(lifeExp = replace(lifeExp, year==1957, 69.96))
+Canada2 %>% 
+  ggplot(aes(x = year, y = lifeExp)) +
+  geom_line() +
+  ggtitle("Canada Expectancy of Life") +
+  xlab("Year") +
+  ylab("Average Expectancy of Life")
+  
+##question 3)
+
+Image: https://www.datasciencecentral.com/wp-content/uploads/2021/10/3774712371.png
+Jobs that use Data Science:
+  *Business Analyst
+  *Data Scientist
+  *Machine Learning Scientist
+  
+Data Science is one of the biggest and most important field in today's world.As a math major, I know for a fact that, Data Science and Statistics are subjects used in every field and company, because everything around us includes data. Data Science in particular reminds me of graphs, spreadsheets, and databases.Having a Data Science background, opens up opportunities in every field and direction. The jobs I mentioned above are just a few of them. Analyzing data is extremely important and necessary in today's growing world.

@@ -1,0 +1,29 @@
+---
+title: 'Homework 2'
+author: "Sanika Gokakkar"
+date: "2/9/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#### Due: 2/9/2022 before 11:59pm. Submit in Canvas (file upload).
+1b. Team Members:
+  Total # of pull requests made: 1
+    1 pull request made to: https://github.com/Trae2021/practice1-trae-anderson
+  Total # of pull requests accepted: 1
+    1 pull request accepted from: https://github.com/dlkeith-isu/DS-202-Homework-2
+1c.
+
+2. See "Data Graphing"
+
+3.  Image: https://analyticsindiamag.com/wp-content/uploads/2018/11/sub2.png
+Jobs that use Data Science:
+  *Data Scientist
+  *Machine Learning Engineer
+  *Business Intelligence Deleloper
+  *Many more!
+When I think of data science, I think of lots of graphs and spreadsheets. This image shows an example of a graph that comes to mind whenever I think of data science. Data science is used in many jobs (as listed above), because there is data for everything and you always need to be looking for trends and analyzing how you can be doing better. This is especially important in the data science field, but also the business field. In business, you need to be looking at what customers like and how you can please them to make more money. Going into my first data science class, I had no idea what to expect, but he did a good job explaining what data science is and why it is important. It is pretty fun doing "data sciency" thing because I find it super interesting to look for patterns and trends in data and look at the causation or cause and effect that could be occurring in the data set. As I said, this is pretty important for pretty much all jobs because there is data related to every field, so it is a pretty good decision to learn some basic data analysis skills as they will help in the future.
+

@@ -1,0 +1,28 @@
+life5060 <- read.csv("https://raw.githubusercontent.com/ds202-at-isu/materials/master/01_collaborative-environment/data/gapminder-5060.csv")
+
+US1 <- life5060[life5060$country == "United States", ]
+library(magrittr)
+library(tidyverse)
+US1 %>% 
+  ggplot(aes(x = year, y = lifeExp)) +
+  geom_line() +
+  ggtitle("US Expectancy of Minneapolis") +
+  xlab("Year") +
+  ylab("Average Expectancy of Life")
+  
+Australia1 <- life5060[life5060$country == "Australia", ] 
+Australia1 %>% 
+  ggplot(aes(x = year, y = lifeExp)) +
+  geom_line() +
+  ggtitle("Australia Expectancy of Life") +
+  xlab("Year") +
+  ylab("Average Expectancy of Life")
+  
+Canada1 <- life5060[life5060$country == "Canada", ] 
+Canada2 <- Canada1 %>% mutate(lifeExp = replace(lifeExp, year==1957, 69.96))
+Canada2 %>% 
+  ggplot(aes(x = year, y = lifeExp)) +
+  geom_line() +
+  ggtitle("Canada Expectancy of Life") +
+  xlab("Year") +
+  ylab("Average Expectancy of Life")
